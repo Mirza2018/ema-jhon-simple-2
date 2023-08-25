@@ -1,0 +1,17 @@
+.header {
+    height: 80px;
+    background-color: rgba(28, 43, 53, 1);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+.ancor a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+.ancor a:hover{
+    color: aquamarine;
+}
