@@ -11,7 +11,7 @@ const Product = (props) => {
 
             <h5 className='hh5'>{name}</h5>
             <p className='p1'><b> price: ${price}</b></p>
-            <p className='p2'>Manufacturer:{seller}</p>
+            <p className='p2'>ManuFacturer:{seller}</p>
             <p className='p2'>Rating: {ratings} stars</p>
 
             <button onClick={() => handleToAdd(props.product)} className='button1'>
