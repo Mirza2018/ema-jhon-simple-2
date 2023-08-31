@@ -4,6 +4,8 @@ import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 import { adddb, getData } from '../../utilities/fackdata';
 import { addToDb, getShoppingCart } from '../../utilities/fakedb';
+import { useLoaderData } from 'react-router-dom';
+
 
 
 const Shop = () => {
@@ -35,7 +37,7 @@ const Shop = () => {
                 const quantity = storedCart[id];
                 saveProducts.quantity = quantity;
                 saveCart.push(saveProducts)
-                console.log(saveProducts);
+                // console.log(saveProducts);
             }
 
         }
@@ -44,7 +46,8 @@ const Shop = () => {
     }, [products])
 
 
-
+const loaderHandle=useLoaderData();
+console.log(loaderHandle);
 
 
     return (
@@ -60,7 +63,7 @@ const Shop = () => {
             </div>
             <div className='cart-container'>
                 {
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={loaderHandle}></Cart>
                 }
             </div>
         </div>
